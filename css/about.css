@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header__section {
+    background-color: #014E56;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__logo {
+    margin-right: 50px;
+}
+
+.header__item__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #fff;
+}
+
+.header__contact__link {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #fff;
+}
+
+.header__wrapp {
+    display: flex;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__menu {
+    display: none;
+}
+
+/* tablet - Planshet */
+@media (max-width:768px) {
+
+}
+
+@media (max-width:550px) {
+    .header__list {
+        display: none;
+    }
+
+    .header__contact__link {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__menu__close {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .header__menu {
+        display: block;
+        width: 80%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: #2C6269;
+        z-index: 10;
+    }
+
+    .header__menu__links {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__menu__link {
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 156%;
+        color: #fff;
+    }
+
+    .header__link {
+        display: block;
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        color: #fff;
+        padding: 10px 18px;
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
+}
